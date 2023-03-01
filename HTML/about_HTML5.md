@@ -1,5 +1,4 @@
-# HTML5?
-
+# HTML 기본 문법
 ## HTML
 
 - HyperText Markup Language
@@ -45,3 +44,63 @@
 </body>
 </html>
 ```
+
+## HTML의 요소와 어트리뷰트
+
+### 요소(Element)
+
+![HTML 요소](./image/HTML%EC%9A%94%EC%86%8C.png)
+
+HTML 요소
+
+- HTML 요소는 시작 태그와 종료 태그, 태그 사이에 위치한 콘텐츠로 구성
+- HTML document는 요소들의 집합
+- 태그는 대소문자를 구별하진 않으나 일반적으로 소문자를 사용
+- 요소의 중첩이 가능
+    - 요소는 다른 요소를 포함 가능
+    - 이때 형성된 부자관계로 정보를 구조화
+    
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Hi there</h1>
+        <p>good to see ya!</p>
+    </body>
+    </html>
+    ```
+    
+- 빈 요소가 존재
+    - content를 가질 수 없는 요소가 존재.
+    - Empty element of Self-Closing element라 지칭
+    - 오직 어트리뷰트만을 가짐
+
+### 어트리뷰트(Attribute)
+
+![HTML 어트리뷰트](./image/HTML%EC%86%8D%EC%84%B1.png)
+
+HTML 어트리뷰트
+
+- 요소의 성질, 특징을 정의
+- 요소의 추가적 정보를 제공
+    
+    ```html
+    <!-- 이미지 파일의 경로, 파일명, 이미지의 너비, 이미지의 높이 정보를 브라우저에게 제공 -->
+    <img src="HELLO.png" width="100" height="120">
+    ```
+    
+- 글로벌 어트리뷰트
+    
+    
+    | Attribute | Description |
+    | --- | --- |
+    | id | 유일한 식별자(id)를 요소에 지정. 중복 지정이 불가능 |
+    | class | 스타일시트에 정의된 class를 요소에 지정. 중복 지정 가능 |
+    | hidden | 브라우저에 노출되지 않게 함 |
+    | lang | 지정된 요소의 언어를 지정. 검색엔진의 크롤링 시 웹페이지의 언어를 인식 가능하게 함 |
+    | style | 요소에 인라인 스타일을 지정 |
+    | tabindex | 사용자가 키보드로 이동할 때 순서를 지정 |
+    | title | 요소에 관한 제목을 지정 |
