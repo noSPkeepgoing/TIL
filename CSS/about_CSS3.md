@@ -18,44 +18,40 @@ CSS Rule Set
 - 셀럭터를 통해 선택된 모든 요소에 선언 블록에서 정의된 스타일을 적용
 - 이와 같은 구문을 Rule Set이라하고 이들의 집합이 Style Sheet
 - 복수개의 선택자 지정 가능
-    - `h1, h2, p { color: blue }` 꼴로 쉼표(`,`)를 이용해 연속해 선택자 지정
+  - `h1, h2, p { color: blue }` 꼴로 쉼표(`,`)를 이용해 연속해 선택자 지정
 - 선택자 패턴
-    
-    
-    | 패턴 | Description |
-    | --- | --- |
-    | * | HTML 문서 내의 모든 요소를 선택. html 요소를 포함한 모든 요소가 선택 |
-    | 태그명 | 지정된 태그명을 가지는 요소를 선택 |
-    | #id 어트리뷰트 값 | id 어트리뷰트 값을 지정하여 일치하는 요소를 선택. id 속성 값은 중복 불가능 |
-    | .class 어트리뷰트 값 | class 어트리뷰트 값을 지정하여 일치하는 요소를 선택. class 속성 값은 중복 가능 |
-    | 셀렉터[어트리뷰트] | 지정된 어트리뷰트를 갖는 모든 요소를 선택 |
-    | 셀렉터[어트리뷰트=”값”] | 지정된 어트리뷰트를 가지며 그 값이 어트리뷰트의 값과 일치하는 모든 요소를 선택 |
-    | 셀렉터[어트리뷰트~=”값”] | 지정된 어트리뷰트의 값이 지정된 값을 공백으로 분리된 단어로 포함하는 요소를 선택 |
-    | 셀렉터[어트리뷰트|=”값”] | 지정된 어트리뷰트의 값과 일치하거나 “값-”으로 시작하는 요소를 선택 |
-    | 셀렉터[어트리뷰트^=”값”] | 지정된 어트리뷰트 값으로 시작하는 요소를 선택 |
-    | 셀렉터[어트리뷰트$=”값”] | 지정된 어트리뷰트 값으로 끝나는 요소를 선택 |
-    | 셀렉터[어트리뷰트*=”값”] | 지정된 어트리뷰트 값을 포함하는 요소를 선택 |
+  | 패턴                      | Description                                                                      |
+  | ------------------------- | -------------------------------------------------------------------------------- |
+  | \*                        | HTML 문서 내의 모든 요소를 선택. html 요소를 포함한 모든 요소가 선택             |
+  | 태그명                    | 지정된 태그명을 가지는 요소를 선택                                               |
+  | #id 어트리뷰트 값         | id 어트리뷰트 값을 지정하여 일치하는 요소를 선택. id 속성 값은 중복 불가능       |
+  | .class 어트리뷰트 값      | class 어트리뷰트 값을 지정하여 일치하는 요소를 선택. class 속성 값은 중복 가능   |
+  | 셀렉터[어트리뷰트]        | 지정된 어트리뷰트를 갖는 모든 요소를 선택                                        |
+  | 셀렉터[어트리뷰트=”값”]   | 지정된 어트리뷰트를 가지며 그 값이 어트리뷰트의 값과 일치하는 모든 요소를 선택   |
+  | 셀렉터[어트리뷰트~=”값”]  | 지정된 어트리뷰트의 값이 지정된 값을 공백으로 분리된 단어로 포함하는 요소를 선택 |
+  | 셀렉터[어트리뷰트\|=”값”] | 지정된 어트리뷰트의 값과 일치하거나 “값-”으로 시작하는 요소를 선택               |
+  | 셀렉터[어트리뷰트^=”값”]  | 지정된 어트리뷰트 값으로 시작하는 요소를 선택                                    |
+  | 셀렉터[어트리뷰트$=”값”]  | 지정된 어트리뷰트 값으로 끝나는 요소를 선택                                      |
+  | 셀렉터[어트리뷰트*=”값”]  | 지정된 어트리뷰트 값을 포함하는 요소를 선택                                      |
 - 복합 선택자
-    
-    ![CSS복합선택자](./image/CSS%EB%B3%B5%ED%95%A9%EC%85%80%EB%A0%89%ED%84%B0.png)
-    
-    | 패턴 | Description |
-    | --- | --- |
-    | 셀렉터A 셀렉터B | 셀렉터A의 모든 후손(하위) 요소 중 셀렉터B와 일치하는 요소를 선택 |
-    | 셀렉터A > 셀렉터B | 셀렉터A의 모든 자식 요소 중 셀렉터B와 일치하는 요소를 선택 |
-    | 셀렉터A + 셀렉터B | 셀렉터A의 형제 요소 중 셀렉터A 바로 뒤에 위치하는 셀렉터B 요소를 선택 |
-    | 셀렉터A ~ 셀렉터B | 셀렉터A의 형제 요소 중 셀렉터A 뒤에 위치하는 셀렉터B 요소를 모두 선택 |
+  ![CSS복합선택자](./image/CSS%EB%B3%B5%ED%95%A9%EC%85%80%EB%A0%89%ED%84%B0.png)
+  | 패턴              | Description                                                           |
+  | ----------------- | --------------------------------------------------------------------- |
+  | 셀렉터A 셀렉터B   | 셀렉터A의 모든 후손(하위) 요소 중 셀렉터B와 일치하는 요소를 선택      |
+  | 셀렉터A > 셀렉터B | 셀렉터A의 모든 자식 요소 중 셀렉터B와 일치하는 요소를 선택            |
+  | 셀렉터A + 셀렉터B | 셀렉터A의 형제 요소 중 셀렉터A 바로 뒤에 위치하는 셀렉터B 요소를 선택 |
+  | 셀렉터A ~ 셀렉터B | 셀렉터A의 형제 요소 중 셀렉터A 뒤에 위치하는 셀렉터B 요소를 모두 선택 |
 - 가상 클래스 선택자
-    - Pseudo-Class Selector
-    - 요소의 특정 상태에 따라 스타일을 정의할 때 사용
-    - CSS 표준에 의해 미리 정의된 이름을 사용
+  - Pseudo-Class Selector
+  - 요소의 특정 상태에 따라 스타일을 정의할 때 사용
+  - CSS 표준에 의해 미리 정의된 이름을 사용
 
 ## 속성(Property)
 
 ```css
 h1 {
-	color: blue;
-	font-size: 18px;
+  color: blue;
+  font-size: 18px;
 }
 ```
 
@@ -69,52 +65,58 @@ h1 {
 
 ## HTML과 CSS의 연동
 
-- HTML에서 외부에 있는 CSS 파일을 로드
-    
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <link rel="stylesheet" href="css/style.css">
-      </head>
-      <body>
-        <h1>Hello CSS!</h1>
-        <p>just keep going</p>
-      </body>
-    </html>
-    ```
-    
-    ```css
-    h1 { color: white; }
-    p  { background: black; }
-    ```
-    
-- HTML 내부에 CSS를 포함
-    
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style>
-          h1 { color: white; }
-          p  { background: black; }
-        </style>
-      </head>
-      <body>
-        <h1>Hello CSS!</h1>
-        <p>just keep going</p>
-      </body>
-    </html>
-    ```
-    
-- HTML요소의 style 속성에 CSS를 기술
-    
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h1 style="color: white">Hello CSS!</h1>
-        <p style="background: black">just keep going</p>
-      </body>
-    </html>
-    ```
+- HTML에서 외부에 있는 CSS 파일을 로드 ( 외부 스타일 시트 )
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <h1>Hello CSS!</h1>
+      <p>just keep going</p>
+    </body>
+  </html>
+  ```
+  ```css
+  h1 {
+    color: white;
+  }
+  p {
+    background: black;
+  }
+  ```
+- HTML 내부에 CSS를 포함 ( 내부 스타일 시트 )
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        h1 {
+          color: white;
+        }
+        p {
+          background: black;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Hello CSS!</h1>
+      <p>just keep going</p>
+    </body>
+  </html>
+  ```
+- HTML요소의 style 속성에 CSS를 기술 ( 인라인 스타일 )
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <h1 style="color: white">Hello CSS!</h1>
+      <p style="background: black">just keep going</p>
+    </body>
+  </html>
+  ```
+- 스타일 적용 우선 순위
+  1. 인라인 스타일
+  2. 내부 스타일 시트, 외부 스타일 시트
+  3. 웹 브라우저 기본 스타일
