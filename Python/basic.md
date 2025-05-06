@@ -108,7 +108,6 @@
       
       </aside>
 
-
   대화형 모드에서 마지막에 실행된 결과값은 `_`에 대입된다.
 
   ```python
@@ -167,6 +166,7 @@
   ```
 
 - 변수와 대입연산자
+
   - 변수(variable)
     변하는 자료를 저장하는 메모리 공간이다.
       <aside>
@@ -179,14 +179,17 @@
       숫자는 맨 앞에 올 수 없고, 키워드는 사용할 수 없다.
 
   변수를 저장하기 위해서 대입연산자 `=` 을 사용한다.
+
   ```python
   >>> number = 4 # 오른쪽 값을 왼쪽 변수에 저장
   >>> 4 = number # 왼쪽에는 반드시 저장 공간인 변수가 와야 함
   SyntaxError: cannot assign to literal
   ```
+
   - 대입 연산자
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adfffcc1-2c98-4c50-8b84-84fbe2c97116/Untitled.png)
-  변수는 마지막에 저장된 하나의 값만 기억한다.
+    ![assignment_operator](./image/assignment_operator.png)
+    변수는 마지막에 저장된 하나의 값만 기억한다.
+
   ```python
   >>> a = b = c = 10
   >>> print(a)
@@ -199,6 +202,7 @@
   >>> print(b)
   100
   ```
+
   - 키워드
     이미 예약된 단어(reserved words)
     ```python
@@ -206,6 +210,7 @@
     >>> print(keyword.kwlist)
     ['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
     ```
+
 - 한 번에 여러 자료 대입
   콤마로 구분된 여러 변수에 순서대로 값을 대입할 수 있다.
   ```python
@@ -319,6 +324,7 @@
     ```
   - `float()`
     실수 형태의 문자열과 정수를 실수로 변환하는 데 사용한다.
+
     ```python
     >>> float(365)
     365.0
@@ -334,9 +340,8 @@
 
     <aside>
     ⚠️ 문자열이 정수나 실수 형태가 아니라면 오류 발생!
-    
-    </aside>
 
+    </aside>
 
 - 16진수, 10진수, 8진수, 2진수
   - 16진수(hexadecimal)
@@ -357,7 +362,7 @@
     >>> 0b11, 0B11
     (3, 3)
     ```
-  각각의 진수를 표시하는 알파벳은 대소문자 모두 가능하다.
+    각각의 진수를 표시하는 알파벳은 대소문자 모두 가능하다.
 - 10진수의 변환 함수 `bin()`, `oct()`, `hex()`
   10진수 → 2진수 : `bin()`
   10진수 → 8진수 : `oct()`
